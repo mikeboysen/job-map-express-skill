@@ -1,4 +1,5 @@
 # Job Map Express — Agent Skill
+From the creator of the Jobs-to-be-Done Masterclass -- the original prompting that leveraged early AI to replace expensive consulting theater in the JTBD world. If it's not good enough (it's actually better) than just tweak it. There are no **Gods** in Jobs-to-be-Done. Only egos.
 
 Installable [Agent Skill](https://cursor.com/docs/skills) that runs the **Job Map Express** method in chat: job maps, success metrics, related jobs, situational factors, social/emotional jobs, financial metrics, solution approaches, root causes, and consumption jobs.
 
