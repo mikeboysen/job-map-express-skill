@@ -34,18 +34,23 @@ Method detail: `job-map-express/references/job-map-kb.md`. Capability list: `job
 
 ```text
 job-map-express-skill/
-├── README.md                 ← you are here
+├── README.md
 ├── LICENSE
 ├── NOTICE
-└── job-map-express/          ← copy THIS folder into your skills dir
-    ├── SKILL.md
-    ├── README.md
-    └── references/
-        ├── help.md
-        └── job-map-kb.md
+├── .cursor-plugin/marketplace.json      # Cursor Team Marketplace
+├── .claude-plugin/marketplace.json      # Claude Code marketplace
+├── .agents/plugins/marketplace.json     # Codex / ChatGPT Work
+├── job-map-express/                     # direct skill-folder install
+│   ├── SKILL.md
+│   └── references/
+└── plugins/job-map-express/             # plugin wrapper
+    ├── .cursor-plugin/plugin.json
+    ├── .claude-plugin/plugin.json
+    ├── .codex-plugin/plugin.json
+    └── skills/job-map-express/          # same skill payload
 ```
 
-The folder name must stay `job-map-express` (matches the skill `name` in frontmatter).
+For folder installs, copy `job-map-express/` (or `plugins/job-map-express/skills/job-map-express/`) into your agent’s skills directory. Folder name must stay `job-map-express`.
 
 ---
 
@@ -193,6 +198,51 @@ This is **GitHub folder install**, not an OpenAI curated marketplace listing.
 Docs: [Codex Skills](https://developers.openai.com/codex/skills)
 
 ---
+
+---
+
+## Plugin marketplaces (ready — not submitted yet)
+
+This repo also ships **plugin wrappers** so marketplaces can point at GitHub:
+
+| Surface | Manifest |
+|---|---|
+| Cursor Team Marketplace | `.cursor-plugin/marketplace.json` → `plugins/job-map-express/` |
+| Claude Code marketplace | `.claude-plugin/marketplace.json` → `plugins/job-map-express/` |
+| Codex / ChatGPT Work plugins | `.agents/plugins/marketplace.json` → `plugins/job-map-express/` |
+
+Plugin payloads live under `plugins/job-map-express/` (with `skills/job-map-express/` inside). The top-level `job-map-express/` folder remains for direct skill-folder installs.
+
+### Add this repo as a marketplace (self-hosted)
+
+**Claude Code**
+
+```text
+/plugin marketplace add mikeboysen/job-map-express-skill
+/plugin install job-map-express@job-map-express-skill
+```
+
+**Codex**
+
+```bash
+codex plugin marketplace add mikeboysen/job-map-express-skill
+codex plugin add job-map-express@job-map-express-skill
+```
+
+**Cursor Team Marketplace** (Teams/Enterprise admin)
+
+1. Dashboard → Settings → Plugins → Team Marketplaces → Import / Add
+2. Paste `https://github.com/mikeboysen/job-map-express-skill`
+3. Review the parsed `job-map-express` plugin and assign access groups
+
+### Public directory submissions (do later — gate closed until Mike opens)
+
+- Cursor public marketplace: https://cursor.com/marketplace/publish
+- Claude community directory: https://platform.claude.com/plugins/submit (public GitHub URL; run `claude plugin validate` first)
+- Codex official directory: separate curated path — use repo marketplace add until invited/listed
+
+Until those gates open, use **folder install** (sections above) or **self-hosted marketplace add**.
+
 
 ## Use
 

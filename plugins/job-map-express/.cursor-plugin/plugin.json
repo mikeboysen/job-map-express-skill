@@ -1,0 +1,30 @@
+{
+  "name": "job-map-express",
+  "displayName": "Job Map Express",
+  "description": "Jobs-to-be-Done job maps and related analyses in chat: maps, success metrics, related jobs, situational factors, social/emotional jobs, financial metrics, solution approaches, root causes, and consumption jobs.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Mike Boysen",
+    "email": "mike@pjtbd.com"
+  },
+  "publisher": "Practical JTBD, LLC",
+  "homepage": "https://github.com/mikeboysen/job-map-express-skill",
+  "repository": "https://github.com/mikeboysen/job-map-express-skill",
+  "license": "LicenseRef-PolyForm-Shield-1.0.0",
+  "keywords": [
+    "jtbd",
+    "job-map",
+    "jobs-to-be-done",
+    "strategy",
+    "outcomes"
+  ],
+  "category": "Productivity",
+  "tags": [
+    "jtbd",
+    "job-map",
+    "skill"
+  ],
+  "skills": [
+    "skills/job-map-express"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "job-map-express",
+  "version": "1.0.0",
+  "description": "Job Map Express Agent Skill \u2014 JTBD job maps and related analyses in chat.",
+  "author": "Mike Boysen <mike@pjtbd.com>",
+  "license": "LicenseRef-PolyForm-Shield-1.0.0",
+  "homepage": "https://github.com/mikeboysen/job-map-express-skill",
+  "repository": "https://github.com/mikeboysen/job-map-express-skill",
+  "keywords": [
+    "jtbd",
+    "job-map",
+    "jobs-to-be-done"
+  ]
+}

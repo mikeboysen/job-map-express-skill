@@ -1,0 +1,22 @@
+{
+  "name": "job-map-express-skill",
+  "owner": {
+    "name": "Mike Boysen",
+    "email": "mike@pjtbd.com"
+  },
+  "metadata": {
+    "description": "Practical JTBD Agent Skills marketplace (Job Map Express)."
+  },
+  "plugins": [
+    {
+      "name": "job-map-express",
+      "source": "./plugins/job-map-express",
+      "description": "Job Map Express \u2014 JTBD job maps and related analyses in chat.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Mike Boysen",
+        "email": "mike@pjtbd.com"
+      }
+    }
+  ]
+}

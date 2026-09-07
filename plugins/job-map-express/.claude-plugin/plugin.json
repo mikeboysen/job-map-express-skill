@@ -1,0 +1,9 @@
+{
+  "name": "job-map-express",
+  "description": "Job Map Express method in chat: job maps, success metrics, related jobs, situational/social/emotional/financial dimensions, solution approaches, root causes, consumption jobs.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Mike Boysen",
+    "email": "mike@pjtbd.com"
+  }
+}

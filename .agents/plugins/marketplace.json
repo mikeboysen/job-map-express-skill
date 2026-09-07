@@ -1,0 +1,20 @@
+{
+  "name": "job-map-express-skill",
+  "interface": {
+    "displayName": "Practical JTBD \u2014 Job Map Express"
+  },
+  "plugins": [
+    {
+      "name": "job-map-express",
+      "source": {
+        "source": "local",
+        "path": "./plugins/job-map-express"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

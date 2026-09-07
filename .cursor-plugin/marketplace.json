@@ -1,0 +1,17 @@
+{
+  "name": "job-map-express-skill",
+  "owner": {
+    "name": "Practical JTBD, LLC",
+    "email": "mike@pjtbd.com"
+  },
+  "metadata": {
+    "description": "Practical JTBD Agent Skills \u2014 Job Map Express and related method skills."
+  },
+  "plugins": [
+    {
+      "name": "job-map-express",
+      "source": "./plugins/job-map-express",
+      "description": "Job Map Express \u2014 JTBD job maps and related analyses in chat."
+    }
+  ]
+}
