@@ -1,13 +1,9 @@
 ---
 name: job-map-express
 description: >-
-  Build Jobs-to-be-Done job maps and related Job Map Express analyses: success
-  metrics, related jobs, situational factors, social/emotional jobs, financial
-  metrics, solution approaches, root causes, and consumption jobs. Use when the
-  user asks for any of those, mentions Job Map Express / JME, or runs
-  /job-map-express (including /job-map-express help). Always collect missing
-  required inputs before inventing. Phases are coverage tags; steps are the
-  chronological map — never one step per phase by default.
+  Job Map Express — build JTBD job maps in chat. Use when the user mentions
+  Job Map Express / JME or runs /job-map-express. Ask for missing inputs
+  before inventing; never one step per phase by default.
 ---
 
 # Job Map Express
