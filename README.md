@@ -3,7 +3,7 @@ From the creator of the Jobs-to-be-Done Masterclass -- the original prompting th
 
 Installable [Agent Skill](https://agentskills.io) (`SKILL.md`) that runs the **Job Map Express** method in chat: job maps, success metrics, related jobs, situational factors, social/emotional jobs, financial metrics, solution approaches, root causes, and consumption jobs.
 
-This repo is the **GitHub install source**. Copy the `job-map-express/` folder into your agent’s skills directory (paths below). It is **not** a listing in the OpenAI or Anthropic marketplaces — install is from this repository.
+This repo is the **GitHub install source** for the [skills.sh](https://skills.sh) / Agent Skills ecosystem. Preferred install is one line via the open CLI (works across Cursor, Claude Code, Codex, and 70+ agents). It is **not** a listing in the OpenAI or Anthropic marketplaces — install is from this repository.
 
 License: **PolyForm Shield 1.0.0** (see `LICENSE` + `NOTICE`). Competing Use is prohibited. Trademarks reserved.
 
@@ -54,7 +54,34 @@ For folder installs, copy `job-map-express/` (or `plugins/job-map-express/skills
 
 ---
 
-## Install from GitHub (any compatible agent)
+## Install (preferred — [skills.sh](https://www.skills.sh/mikeboysen/job-map-express-skill))
+
+One line. The CLI discovers `job-map-express` in this repo and installs it into the agent(s) you use:
+
+```bash
+npx skills add mikeboysen/job-map-express-skill
+```
+
+Useful variants:
+
+```bash
+# List skills in this repo (no install)
+npx skills add mikeboysen/job-map-express-skill --list
+
+# Install only this skill, global, non-interactive
+npx skills add mikeboysen/job-map-express-skill --skill job-map-express -g -y
+
+# Target specific agents
+npx skills add mikeboysen/job-map-express-skill -a cursor -a claude-code -a codex -y
+```
+
+Directory listing: https://www.skills.sh/mikeboysen/job-map-express-skill
+
+After install, start a **new** agent session (or reload the window). Invoke with `/job-map-express` or ask naturally. Use `/job-map-express help` for the full capability list.
+
+### Manual install (clone + copy)
+
+If you prefer not to use the CLI:
 
 ```bash
 git clone https://github.com/mikeboysen/job-map-express-skill.git
@@ -67,8 +94,6 @@ Windows (PowerShell):
 git clone https://github.com/mikeboysen/job-map-express-skill.git $env:TEMP\jme-skill
 # Then Copy-Item the job-map-express folder into the tool path below
 ```
-
-After install, start a **new** agent session (or reload the window). Invoke with `/job-map-express` or ask naturally. Use `/job-map-express help` for the full capability list.
 
 ---
 
